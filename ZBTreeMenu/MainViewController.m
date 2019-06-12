@@ -25,25 +25,25 @@
     [treeview reloadView:[self returnData] withRootID:@"0"];
 }
 - (NSMutableArray *)returnData {
-    NSArray *list = @[@{@"parentID":@"0", @"name":@"Node1",
+    NSArray *list = @[@{@"parentID":@"0", @"name":@"摄像机",
                         @"childrenID":@"1",@"camera":@"YES"},
-                      @{@"parentID":@"1", @"name":@"Node10",
+                      @{@"parentID":@"1", @"name":@"摄像机10",
                         @"childrenID":@"10",@"camera":@"YES"},
-                      @{@"parentID":@"1", @"name":@"Node11",
+                      @{@"parentID":@"1", @"name":@"摄像机11",
                         @"childrenID":@"11",@"camera":@"YES"},
-                      @{@"parentID":@"10", @"name":@"Node100", @"childrenID":@"100",@"camera":@"YES"},
-                      @{@"parentID":@"10", @"name":@"Node101", @"childrenID":@"101",@"camera":@"YES"},
-                      @{@"parentID":@"11", @"name":@"Node110", @"childrenID":@"110",@"camera":@"YES"},
-                      @{@"parentID":@"11", @"name":@"Node111", @"childrenID":@"111",@"camera":@"YES"},
-                      @{@"parentID":@"0", @"name":@"Node2", @"childrenID":@"2",@"camera":@"NO"},
-                      @{@"parentID":@"2", @"name":@"Node20", @"childrenID":@"20",@"camera":@"NO"},
-                      @{@"parentID":@"20", @"name":@"Node200", @"childrenID":@"200",@"camera":@"NO"},
-                      @{@"parentID":@"20", @"name":@"Node101", @"childrenID":@"201",@"camera":@"NO"},
-                      @{@"parentID":@"20", @"name":@"Node202", @"childrenID":@"202",@"camera":@"NO"},
-                      @{@"parentID":@"2", @"name":@"Node21", @"childrenID":@"21",@"camera":@"NO"},
-                      @{@"parentID":@"21", @"name":@"Node210", @"childrenID":@"210",@"camera":@"NO"},
-                      @{@"parentID":@"21", @"name":@"Node211", @"childrenID":@"211",@"camera":@"NO"},
-                      @{@"parentID":@"21", @"name":@"Node212", @"childrenID":@"212",@"camera":@"NO"},];
+                      @{@"parentID":@"10", @"name":@"摄像机100", @"childrenID":@"100",@"camera":@"YES"},
+                      @{@"parentID":@"10", @"name":@"摄像机101", @"childrenID":@"101",@"camera":@"YES"},
+                      @{@"parentID":@"11", @"name":@"摄像机110", @"childrenID":@"110",@"camera":@"YES"},
+                      @{@"parentID":@"11", @"name":@"摄像机111", @"childrenID":@"111",@"camera":@"YES"},
+                      @{@"parentID":@"0", @"name":@"基站", @"childrenID":@"2",@"camera":@"NO"},
+                      @{@"parentID":@"2", @"name":@"基站20", @"childrenID":@"20",@"camera":@"NO"},
+                      @{@"parentID":@"20", @"name":@"基站200", @"childrenID":@"200",@"camera":@"NO"},
+                      @{@"parentID":@"20", @"name":@"基站101", @"childrenID":@"201",@"camera":@"NO"},
+                      @{@"parentID":@"20", @"name":@"基站202", @"childrenID":@"202",@"camera":@"NO"},
+                      @{@"parentID":@"2", @"name":@"基站21", @"childrenID":@"21",@"camera":@"NO"},
+                      @{@"parentID":@"21", @"name":@"基站210", @"childrenID":@"210",@"camera":@"NO"},
+                      @{@"parentID":@"21", @"name":@"基站211", @"childrenID":@"211",@"camera":@"NO"},
+                      @{@"parentID":@"21", @"name":@"基站212", @"childrenID":@"212",@"camera":@"NO"},];
     NSMutableArray *data = [NSMutableArray new];
     for (NSDictionary *temp in list) {
         TreeNode *node = [TreeNode cellWithNodeInfomation:temp];
